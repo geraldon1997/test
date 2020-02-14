@@ -1,0 +1,23 @@
+<script>
+
+let todos = [];
+
+function addTodo(){
+    todos = [...todos, ''];
+}
+
+function removeSelf(){
+
+}
+
+</script>
+
+{#each todos as todo, index}
+
+<input bind:value={todos[index]}><br>
+
+{/each}
+
+<button on:click={addTodo()}>Add</button>
+
+
